@@ -13,11 +13,11 @@ function HelloWorldHandler:access(conf)
   HelloWorldHandler.super.access(self)
 
   if conf.say_hello then
-    ngx.log(ngx.ERR, "============ Hello World! ============")
-    ngx.header["Hello-World"] = "Hello World!!!"
+    ngx.log(ngx.ERR, "============ Hello World Falabella! ============")
+    ngx.header["Hello-World"] = "Hello World Falabella!!!"
   else
-    ngx.log(ngx.ERR, "============ Bye World! ============")
-    ngx.header["Hello-World"] = "Bye World!!!"
+    ngx.log(ngx.ERR, "============ Bye World Falabella! ============")
+    ngx.header["Hello-World"] = "Bye World Falabella!!!"
   end
 
 end
