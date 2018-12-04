@@ -36,13 +36,13 @@ describe("hello-world plugin", function()
       handler:access(mock_config)
     end)
 
-    it("adds the correct header value of Hello World!!!", function()
+    it("adds the correct header value of Hello World Falabella!!!", function()
       assert.is_not.falsy(ngx.header['Hello-World'])
-      assert.is_equal("Hello World!!!", ngx.header['Hello-World'])
+      assert.is_equal("Hello World Falabella!!!", ngx.header['Hello-World'])
     end)
 
     it("calls ngx.log", function()
-      assert.stub(ngx.log).was.called_with("ERROR:", "============ Hello World! ============")
+      assert.stub(ngx.log).was.called_with("ERROR:", "============ Hello World Falabella! ============")
     end)
   end)
 
@@ -54,9 +54,9 @@ describe("hello-world plugin", function()
       handler:access(mock_config)
     end)
 
-    it("adds the correct header value of Bye World!!!", function()
+    it("adds the correct header value of Bye World Falabella!!!", function()
       assert.is_not.falsy(ngx.header['Hello-World'])
-      assert.is_equal("Bye World!!!", ngx.header['Hello-World'])
+      assert.is_equal("Bye World Falabella!!!", ngx.header['Hello-World'])
     end)
 
     it("calls ngx.log", function()

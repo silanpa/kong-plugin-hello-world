@@ -76,7 +76,7 @@ describe("Plugin: hello-world (access)", function()
         assert.res_status(200, res)
         assert.response(res).has.header("Hello-World")
         local header_value = res.headers["Hello-World"]
-        assert.is_equal("Hello World!!!", header_value)
+        assert.is_equal("Hello World Falabella!!!", header_value)
       end)
     end)
 
